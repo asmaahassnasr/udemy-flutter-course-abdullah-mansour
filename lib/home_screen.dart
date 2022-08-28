@@ -17,8 +17,11 @@ class HomeScreen extends StatelessWidget{
           Icon(
             Icons.search,
           ),
-          Icon(
-            Icons.notifications_active,
+          IconButton(
+            icon: Icon(
+              Icons.notifications_active,
+            ),
+            onPressed: (){print('notification clicked');},
           ),
         ],
       ),
