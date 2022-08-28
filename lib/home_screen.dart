@@ -28,7 +28,42 @@ class HomeScreen extends StatelessWidget{
           ),
         ],
       ),
-      body: Text('Welcom '),
+      body: Column(
+        children: [
+          Text(
+            'First Text',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 30.0,
+              backgroundColor: Colors.red,
+            ),
+          ),
+          Text(
+            'Second Text',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 30.0,
+              backgroundColor: Colors.green,
+            ),
+          ),
+          Text(
+            'Third Text',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 30.0,
+              backgroundColor: Colors.yellowAccent,
+            ),
+          ),
+          Text(
+            'Fourth Text',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 30.0,
+              backgroundColor: Colors.blue,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
