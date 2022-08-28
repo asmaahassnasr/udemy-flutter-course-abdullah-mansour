@@ -12,7 +12,14 @@ class HomeScreen extends StatelessWidget{
         title: Text(
           'First App'
         ),
-        actions: [],
+        actions: [
+          Icon(
+            Icons.search,
+          ),
+          Icon(
+            Icons.notifications_active,
+          ),
+        ],
       ),
     );
   }
