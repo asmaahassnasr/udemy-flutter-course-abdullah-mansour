@@ -30,37 +30,53 @@ class HomeScreen extends StatelessWidget{
       ),
       body: Column(
         children: [
-          Text(
-            'First Text',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 30.0,
-              backgroundColor: Colors.red,
+          Expanded(
+            flex: 2,
+            child: Container(
+              color: Colors.red,
+              child: Text(
+                'First Text',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 30.0,
+                ),
+              ),
             ),
           ),
-          Text(
-            'Second Text',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 30.0,
-              backgroundColor: Colors.green,
+          Expanded(
+              child: Container(
+                color: Colors.green,
+                child: Text(
+                  'Second Text',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 30.0,
+                  ),
+                ),
+              ),),
+          Expanded(
+            child: Container(
+              color: Colors.amber,
+              child: Text(
+                'Third Text',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 30.0,
+                ),
+              ),
             ),
           ),
-          Text(
-            'Third Text',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 30.0,
-              backgroundColor: Colors.yellowAccent,
+          Expanded(
+            child: Container(
+            color: Colors.blue,
+            child: Text(
+              'Fourth Text',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 30.0,
+              ),
             ),
           ),
-          Text(
-            'Fourth Text',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 30.0,
-              backgroundColor: Colors.blue,
-            ),
           ),
         ],
       ),
