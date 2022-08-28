@@ -14,14 +14,17 @@ class HomeScreen extends StatelessWidget{
           'First App'
         ),
         actions: [
-          Icon(
-            Icons.search,
-          ),
           IconButton(
             icon: Icon(
               Icons.notifications_active,
             ),
             onPressed: (){print('notification clicked');},
+          ),
+          IconButton(
+            icon: Icon(
+              Icons.account_circle,
+            ),
+            onPressed: (){print('User clicked');},
           ),
         ],
       ),
