@@ -9,6 +9,10 @@ class HomeScreen extends StatelessWidget{
         leading: Icon(
           Icons.menu,
         ),
+        title: Text(
+          'First App'
+        ),
+        actions: [],
       ),
     );
   }
