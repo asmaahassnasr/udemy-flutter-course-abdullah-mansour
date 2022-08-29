@@ -93,6 +93,23 @@ class LoginScreen extends StatelessWidget {
                   ),
               ),
             ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Don\'t have an accout?',
+                ),
+                TextButton(
+                    onPressed: (){},
+                    child: Text(
+                      'Register Now'
+                    ),
+                )
+              ],
+            ),
           ],
         ),
       ),
