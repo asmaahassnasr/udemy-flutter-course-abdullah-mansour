@@ -28,66 +28,118 @@ class HomeScreen extends StatelessWidget{
           ),
         ],
       ),
-      body: Container(
-        color: Colors.purpleAccent,
-        width: double.infinity,
-        child: Column(
-          mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Container(
-              color: Colors.red,
-              child: Expanded(
-                flex: 2,
+      body: Row(
+        children: [
+          Expanded(
+            child: Container(
+      color: Colors.red,
+      child: Text(
+            'First',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 20.0,
+            ),
+            ),
+            ),
+          ),
+          Expanded(
+              child:Container(
+                color: Colors.blue,
                 child: Text(
-                  'First Text',
+                  'Second',
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 30.0,
+                    fontSize: 20.0,
                   ),
                 ),
               ),
-            ),
-            // Container(
-            //   color: Colors.green,
-            //   child: Expanded(
-            //     child: Text(
-            //         'Second Text',
-            //         style: TextStyle(
-            //           color: Colors.white,
-            //           fontSize: 30.0,
-            //         ),
-            //       ),
-            //   ),
-            // ),
-            // Container(
-            //   color: Colors.amber,
-            //   child: Expanded(
-            //     child: Text(
-            //       'Third Text',
-            //       style: TextStyle(
-            //         color: Colors.white,
-            //         fontSize: 30.0,
-            //       ),
-            //     ),
-            //   ),
-            // ),
-            // Container(
-            //   color: Colors.blue,
-            //   child: Expanded(
-            //     child: Text(
-            //     'Fourth Text',
-            //     style: TextStyle(
-            //       color: Colors.white,
-            //       fontSize: 30.0,
-            //     ),
-            //   ),
-            //   ),
-            // ),
-          ],
-        ),
+          ),
+          Expanded(
+              child:Container(
+                color: Colors.green,
+                child: Text(
+                  'Third',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20.0,
+                  ),
+                ),
+              ),
+          ),
+          Expanded(
+              child:Container(
+                color: Colors.amber,
+                child: Text(
+                  'Fourth',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20.0,
+                  ),
+                ),
+              ),
+          ),
+        ],
       ),
+      // Container(
+      //   color: Colors.purpleAccent,
+      //   width: double.infinity,
+      //   child: Column(
+      //     mainAxisSize: MainAxisSize.max,
+      //     mainAxisAlignment: MainAxisAlignment.center,
+      //     crossAxisAlignment: CrossAxisAlignment.center,
+      //     children: [
+      //       Container(
+      //         color: Colors.red,
+      //         child: Expanded(
+      //           flex: 2,
+      //           child: Text(
+      //             'First Text',
+      //             style: TextStyle(
+      //               color: Colors.white,
+      //               fontSize: 30.0,
+      //             ),
+      //           ),
+      //         ),
+      //       ),
+      //       // Container(
+      //       //   color: Colors.green,
+      //       //   child: Expanded(
+      //       //     child: Text(
+      //       //         'Second Text',
+      //       //         style: TextStyle(
+      //       //           color: Colors.white,
+      //       //           fontSize: 30.0,
+      //       //         ),
+      //       //       ),
+      //       //   ),
+      //       // ),
+      //       // Container(
+      //       //   color: Colors.amber,
+      //       //   child: Expanded(
+      //       //     child: Text(
+      //       //       'Third Text',
+      //       //       style: TextStyle(
+      //       //         color: Colors.white,
+      //       //         fontSize: 30.0,
+      //       //       ),
+      //       //     ),
+      //       //   ),
+      //       // ),
+      //       // Container(
+      //       //   color: Colors.blue,
+      //       //   child: Expanded(
+      //       //     child: Text(
+      //       //     'Fourth Text',
+      //       //     style: TextStyle(
+      //       //       color: Colors.white,
+      //       //       fontSize: 30.0,
+      //       //     ),
+      //       //   ),
+      //       //   ),
+      //       // ),
+      //     ],
+      //   ),
+      // ),
     );
   }
 }
