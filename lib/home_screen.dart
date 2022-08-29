@@ -30,13 +30,47 @@ class HomeScreen extends StatelessWidget{
       ),
       body: Column(
         children: [
-          Image(
-              image: NetworkImage(
-                'https://images.unsplash.com/photo-1604085572504-a392ddf0d86a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b3JhbmdlJTIwZmxvd2VyfGVufDB8fDB8fA%3D%3D&w=1000&q=80',
+          Container(
+            width: 200.0,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20.0),
+                  // borderRadius: BorderRadiusDirectional.only(
+                  //   topStart: Radius.circular(20.0),
+                  // ),
+                ),
+                clipBehavior: Clip.antiAliasWithSaveLayer,
+                child: Stack(
+                  alignment: Alignment.bottomCenter,
+                  children: [
+                    Image(
+                      image: NetworkImage(
+                        'https://images.unsplash.com/photo-1604085572504-a392ddf0d86a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b3JhbmdlJTIwZmxvd2VyfGVufDB8fDB8fA%3D%3D&w=1000&q=80',
+                      ),
+                      width: 200.0,
+                      height: 200.0,
+                      fit: BoxFit.cover,
+                    ),
+                    Container(
+                      color: Colors.white.withOpacity(.4),
+                      width: double.infinity,
+                      padding: const EdgeInsets.symmetric(
+                        vertical: 10.0,
+                      ),
+                      child: Text(
+                        'Image',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
-              width: 200.0,
-            height: 200.0,
-            fit: BoxFit.cover,
+            ),
           ),
         ],
       ),
