@@ -28,57 +28,56 @@ class HomeScreen extends StatelessWidget{
           ),
         ],
       ),
-      body: Row(
-        children: [
-          Expanded(
-            child: Container(
-      color: Colors.red,
-      child: Text(
-            'First',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 20.0,
-            ),
-            ),
-            ),
-          ),
-          Expanded(
-              child:Container(
-                color: Colors.blue,
-                child: Text(
-                  'Second',
+      body: Container(
+        color: Colors.grey,
+        height: double.infinity,
+        child: Row(
+          mainAxisSize: MainAxisSize.max,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              color: Colors.red,
+              child: Text(
+                  'First',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20.0,
                   ),
-                ),
-              ),
-          ),
-          Expanded(
-              child:Container(
-                color: Colors.green,
-                child: Text(
-                  'Third',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20.0,
                   ),
+            ),
+            Container(
+              color: Colors.blue,
+              child: Text(
+                'Second',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20.0,
                 ),
               ),
-          ),
-          Expanded(
-              child:Container(
-                color: Colors.amber,
-                child: Text(
-                  'Fourth',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20.0,
-                  ),
+            ),
+            Container(
+              color: Colors.green,
+              child: Text(
+                'Third',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20.0,
                 ),
               ),
-          ),
-        ],
+            ),
+            Container(
+              color: Colors.amber,
+              child: Text(
+                'Fourth',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20.0,
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
       // Container(
       //   color: Colors.purpleAccent,
