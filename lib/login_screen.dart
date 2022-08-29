@@ -46,6 +46,29 @@ class LoginScreen extends StatelessWidget {
                 border: OutlineInputBorder(),
               ),
             ),
+            SizedBox(
+              height: 30.0,
+            ),
+            TextFormField(
+              //Making keyboard just for password
+              keyboardType: TextInputType.visiblePassword,
+              obscureText: true,
+              decoration: InputDecoration(
+                //PlsceHolder
+                //hintText: 'Email Address',
+                labelText: 'Password',
+                // password Icon
+                prefixIcon: Icon(
+                  Icons.lock,
+                ),
+                suffixIcon: Icon(
+                  Icons.remove_red_eye,
+                ),
+                //To disappear Border
+                // border: InputBorder.none,
+                border: OutlineInputBorder(),
+              ),
+            ),
           ],
         ),
       ),
