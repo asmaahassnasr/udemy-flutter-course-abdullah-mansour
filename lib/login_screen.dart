@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
 
+  var emailController = TextEditingController();
+  var passwordController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,6 +25,7 @@ class LoginScreen extends StatelessWidget {
               height: 50.0,
             ),
             TextFormField(
+              controller: emailController,
               //Making keyboard just for Email
               keyboardType: TextInputType.emailAddress,
               //After user finishing all email texrt
@@ -50,6 +54,7 @@ class LoginScreen extends StatelessWidget {
               height: 30.0,
             ),
             TextFormField(
+              controller: passwordController,
               //Making keyboard just for password
               keyboardType: TextInputType.visiblePassword,
               obscureText: true,
@@ -76,7 +81,10 @@ class LoginScreen extends StatelessWidget {
               width: double.infinity,
               color: Colors.blue,
               child: MaterialButton(
-                  onPressed: (){},
+                  onPressed: (){
+                    print(emailController.text);
+                    print(passwordController.text);
+                  },
                   child: Text(
                   'Login',
                     style: TextStyle(
