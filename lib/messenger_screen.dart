@@ -6,56 +6,56 @@ class MessengerScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-        appBar: AppBar(
-          backgroundColor: Colors.white,
-          elevation: 0.0,
-          title: Row(
-            children: [
-              CircleAvatar(
-                radius: 20.0,
-                backgroundImage: NetworkImage(
-                  'https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512__340.jpg'
-                ),
-              ),
-              SizedBox(
-                width: 15.0,
-              ),
-              Text(
-                'Chats',
-                style: TextStyle(
-                  color: Colors.black,
-                ),
-              ),
-            ],
-          ),
-          actions: [
-            IconButton(
-                onPressed: (){},
-                icon: CircleAvatar(
-                  backgroundColor: Colors.blue,
-                  radius: 15.0,
-                  child: Icon(
-                    Icons.camera_alt,
-                    size: 16.0,
-                    color: Colors.white,
-                  ),
-                ),
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0.0,
+        titleSpacing: 20.0,
+        title: Row(
+          children: [
+            CircleAvatar(
+              radius: 20.0,
+              backgroundImage: NetworkImage(
+                  'https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512__340.jpg'),
             ),
-            IconButton(
-              onPressed: (){},
-              icon: CircleAvatar(
-                backgroundColor: Colors.blue,
-                radius: 15.0,
-                child: Icon(
-                  Icons.edit,
-                  size: 16.0,
-                  color: Colors.white,
-                ),
+            SizedBox(
+              width: 15.0,
+            ),
+            Text(
+              'Chats',
+              style: TextStyle(
+                color: Colors.black,
               ),
             ),
           ],
         ),
-        body: Padding(
+        actions: [
+          IconButton(
+            icon: CircleAvatar(
+              radius: 15.0,
+              backgroundColor: Colors.blue,
+              child: Icon(
+                Icons.camera_alt,
+                size: 16.0,
+                color: Colors.white,
+              ),
+            ),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: CircleAvatar(
+              radius: 15.0,
+              backgroundColor: Colors.blue,
+              child: Icon(
+                Icons.edit,
+                size: 16.0,
+                color: Colors.white,
+              ),
+            ),
+            onPressed: () {},
+          ),
+        ],
+      ),
+      body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: SingleChildScrollView(
           child: Column(
@@ -89,14 +89,14 @@ class MessengerScreen extends StatelessWidget {
                 height: 20.0,
               ),
               Container(
-                height: 100.0,
+                height: 130.0,
                 child: ListView.separated(
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) => buildStoryItem(),
                   separatorBuilder: (context, index) => SizedBox(
                     width: 20.0,
                   ),
-                  itemCount: 5,
+                  itemCount: 9,
                 ),
               ),
               SizedBox(
@@ -128,7 +128,7 @@ class MessengerScreen extends StatelessWidget {
               CircleAvatar(
                 radius: 30.0,
                 backgroundImage: NetworkImage(
-                    'https://avatars.githubusercontent.com/u/34492145?v=4'),
+                    'https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512__340.jpg'),
               ),
               Padding(
                 padding: const EdgeInsetsDirectional.only(
@@ -137,7 +137,7 @@ class MessengerScreen extends StatelessWidget {
                 ),
                 child: CircleAvatar(
                   radius: 7.0,
-                  backgroundColor: Colors.red,
+                  backgroundColor: Colors.green,
                 ),
               ),
             ],
@@ -150,7 +150,7 @@ class MessengerScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Abdullah Ahmed Abdullah Ahmed Abdullah Ahmed Abdullah Ahmed',
+                  'Asmaa Hassan ',
                   style: TextStyle(
                     fontSize: 16.0,
                     fontWeight: FontWeight.bold,
@@ -206,16 +206,16 @@ class MessengerScreen extends StatelessWidget {
                 CircleAvatar(
                   radius: 30.0,
                   backgroundImage: NetworkImage(
-                      'https://avatars.githubusercontent.com/u/34492145?v=4'),
+                      'https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512__340.jpg'),
                 ),
                 Padding(
                   padding: const EdgeInsetsDirectional.only(
                     bottom: 3.0,
-                    end: 3.0,
+                    end: 1.0,
                   ),
                   child: CircleAvatar(
                     radius: 7.0,
-                    backgroundColor: Colors.red,
+                    backgroundColor: Colors.green,
                   ),
                 ),
               ],
@@ -224,7 +224,7 @@ class MessengerScreen extends StatelessWidget {
               height: 6.0,
             ),
             Text(
-              'Abdullah Mansour Ali Mansour',
+              'Asmaa Hassan',
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
             ),
