@@ -28,57 +28,285 @@ class HomeScreen extends StatelessWidget{
           ),
         ],
       ),
-      body: Container(
-        color: Colors.grey,
-        height: double.infinity,
-        child: Row(
-          mainAxisSize: MainAxisSize.max,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              color: Colors.red,
-              child: Text(
-                  'First',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20.0,
-                  ),
-                  ),
-            ),
-            Container(
-              color: Colors.blue,
-              child: Text(
+      body: SingleChildScrollView(
+        //If it is ROW not col.
+        //scrollDirection: Axis.horizontal,
+        child: Container(
+          width: double.infinity,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'First',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
                 'Second',
                 style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20.0,
+                  fontSize: 30.0,
                 ),
               ),
-            ),
-            Container(
-              color: Colors.green,
-              child: Text(
-                'Third',
+              Text(
+                'Thid',
                 style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20.0,
+                  fontSize: 30.0,
                 ),
               ),
-            ),
-            Container(
-              color: Colors.amber,
-              child: Text(
+              Text(
                 'Fourth',
                 style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20.0,
+                  fontSize: 30.0,
                 ),
               ),
-            ),
-          ],
+              Text(
+                'First',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Second',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Thid',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Fourth',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'First',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Second',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Thid',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Fourth',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'First',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Second',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Thid',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Fourth',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'First',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Second',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Thid',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Fourth',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'First',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Second',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Thid',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Fourth',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'First',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Second',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Thid',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Fourth',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ), Text(
+                'First',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Second',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Thid',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Fourth',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'First',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Second',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Thid',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+              Text(
+                'Fourth',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
+      // Container(
+      //   color: Colors.grey,
+      //   height: double.infinity,
+      //   child:
+      //   Row(
+      //     mainAxisSize: MainAxisSize.max,
+      //     crossAxisAlignment: CrossAxisAlignment.center,
+      //     mainAxisAlignment: MainAxisAlignment.center,
+      //     children: [
+      //       Container(
+      //         color: Colors.red,
+      //         child: Text(
+      //             'First',
+      //             style: TextStyle(
+      //               color: Colors.white,
+      //               fontSize: 20.0,
+      //             ),
+      //             ),
+      //       ),
+      //       Container(
+      //         color: Colors.blue,
+      //         child: Text(
+      //           'Second',
+      //           style: TextStyle(
+      //             color: Colors.white,
+      //             fontSize: 20.0,
+      //           ),
+      //         ),
+      //       ),
+      //       Container(
+      //         color: Colors.green,
+      //         child: Text(
+      //           'Third',
+      //           style: TextStyle(
+      //             color: Colors.white,
+      //             fontSize: 20.0,
+      //           ),
+      //         ),
+      //       ),
+      //       Container(
+      //         color: Colors.amber,
+      //         child: Text(
+      //           'Fourth',
+      //           style: TextStyle(
+      //             color: Colors.white,
+      //             fontSize: 20.0,
+      //           ),
+      //         ),
+      //       ),
+      //     ],
+      //   ),
+      // ),
       // Container(
       //   color: Colors.purpleAccent,
       //   width: double.infinity,
