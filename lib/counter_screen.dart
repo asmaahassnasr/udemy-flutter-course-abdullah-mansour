@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
-class CounterScreen extends StatelessWidget {
+class CounterScreen extends StatefulWidget {
+  @override
+  State<CounterScreen> createState() => _CounterScreenState();
+}
 
+class _CounterScreenState extends State<CounterScreen> {
   int counter = 1;
   @override
   Widget build(BuildContext context) {
@@ -17,8 +21,10 @@ class CounterScreen extends StatelessWidget {
           children: [
             TextButton(
               onPressed: (){
-                counter--;
-                print(counter);
+               setState(() {
+                 counter--;
+                 print(counter);
+               });
               },
               child: Text(
                 'MINUS',
@@ -39,8 +45,10 @@ class CounterScreen extends StatelessWidget {
             ),
             TextButton(
               onPressed: (){
-                counter++;
-                print(counter);
+                setState(() {
+                  counter++;
+                  print(counter);
+                });
               },
               child: Text(
                 'PLUS',
