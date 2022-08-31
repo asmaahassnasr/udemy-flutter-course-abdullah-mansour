@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
 
-class LoginScreen extends StatelessWidget {
+class LoginScreen extends StatefulWidget {
+  @override
+  State<LoginScreen> createState() => _LoginScreenState();
+}
 
+class _LoginScreenState extends State<LoginScreen> {
   var emailController = TextEditingController();
+
   var passwordController = TextEditingController();
+
   var formKey = GlobalKey<FormState>();
+
+  bool isPassVisible = false;
 
   @override
   Widget build(BuildContext context) {
@@ -67,7 +75,7 @@ class LoginScreen extends StatelessWidget {
                     controller: passwordController,
                     //Making keyboard just for password
                     keyboardType: TextInputType.visiblePassword,
-                    obscureText: true,
+                    obscureText: isPassVisible?false:true,
                     validator: (value){
                       if(value!.isEmpty){
                         return 'Password is required';
@@ -81,8 +89,15 @@ class LoginScreen extends StatelessWidget {
                       prefixIcon: Icon(
                         Icons.lock,
                       ),
-                      suffixIcon: Icon(
-                        Icons.remove_red_eye,
+                      suffixIcon: TextButton(
+                        onPressed: (){
+                          setState(() {
+                            isPassVisible = !isPassVisible;
+                          });
+                        },
+                        child: Icon(
+                          isPassVisible?Icons.visibility_off:Icons.remove_red_eye,
+                        ),
                       ),
                       //To disappear Border
                       // border: InputBorder.none,
